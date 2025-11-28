@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 开放图谱(Open Graph)标签 -->
+    <meta property="og:title" content="示例页面 - 带有Open Graph标签">
+    <meta property="og:description" content="这是一个示例页面，用于演示Open Graph标签，特别是在WhatsApp中分享时显示预览图。">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=Open+Graph+Preview+Image">
+    <meta property="og:url" content="https://example.com/example-page.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="示例网站">
+    
+    <!-- Twitter Card标签 (可选，但建议添加) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="示例页面 - 带有Open Graph标签">
+    <meta name="twitter:description" content="这是一个示例页面，用于演示Open Graph标签，特别是在WhatsApp中分享时显示预览图。">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=Open+Graph+Preview+Image">
+    
+    <title>示例页面 - 带有Open Graph标签</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .preview-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .code-block {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        .steps {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .steps li {
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>带有Open Graph标签的示例页面</h1>
+        
+        <img src="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=Open+Graph+Preview+Image" alt="示例图片" class="preview-image">
+        
+        <div class="info-section">
+            <h2>关于此页面</h2>
+            <p>这个页面包含了完整的开放图谱(Open Graph)标签，当您在WhatsApp中分享此页面的链接时，会显示预览图、标题和描述。</p>
+            <p>您可以复制此页面的URL，在WhatsApp中粘贴发送，查看预览效果。</p>
+        </div>
+        
+        <h2>开放图谱标签说明</h2>
+        <p>开放图谱标签是添加到网页HTML中的特殊元标签，用于控制社交媒体平台(如WhatsApp、Facebook等)分享内容时的显示方式。</p>
+        
+        <div class="code-block">
+            &lt;meta property="og:title" content="页面标题"&gt;<br>
+            &lt;meta property="og:description" content="页面描述"&gt;<br>
+            &lt;meta property="og:image" content="图片URL"&gt;<br>
+            &lt;meta property="og:url" content="页面URL"&gt;<br>
+            &lt;meta property="og:type" content="website"&gt;<br>
+            &lt;meta property="og:site_name" content="网站名称"&gt;
+        </div>
+        
+        <h2>如何在WhatsApp中测试</h2>
+        <ol class="steps">
+            <li>将此页面部署到服务器上（或使用本地开发服务器）</li>
+            <li>在浏览器中访问此页面</li>
+            <li>复制地址栏中的URL</li>
+            <li>在WhatsApp中粘贴并发送该链接</li>
+            <li>查看是否显示预览图、标题和描述</li>
+        </ol>
+        
+        <h2>推荐工具</h2>
+        <p>如果您想为现有网站添加开放图谱标签，可以使用以下工具：</p>
+        <ul class="steps">
+            <li><a href="https://opengraph.xyz" class="button" target="_blank">Open Graph检查器</a> - 测试和分析网站的开放图谱标签</li>
+            <li><a href="https://metatags.io" class="button" target="_blank">Meta Tags生成器</a> - 生成开放图谱和社交媒体标签</li>
+            <li><a href="https://www.heymeta.com" class="button" target="_blank">Hey Meta</a> - 预览和生成社交媒体元标签</li>
+        </ul>
+        
+        <footer>
+            <p>此页面仅用于演示目的 | 带有Open Graph标签的示例</p>
+        </footer>
+    </div>
+</body>
+</html>
